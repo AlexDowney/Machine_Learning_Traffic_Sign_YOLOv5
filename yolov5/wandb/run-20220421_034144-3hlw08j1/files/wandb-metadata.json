@@ -1,0 +1,29 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.2",
+    "heartbeatAt": "2022-04-21T07:41:50.804007",
+    "startedAt": "2022-04-21T07:41:44.493084",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "../data/scripts/custom.yaml",
+        "--weights",
+        "yolov5s.pt"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\alexa\\Documents\\VT Work\\2021-2022 Junior Year\\2022 Spring\\ECE 4424 Machine Learning\\Project\\yolov5\\train.py",
+    "codePath": "train.py",
+    "host": "GopherOfAnnihilation",
+    "username": "Overlord",
+    "executable": "C:\\Python39\\python.exe"
+}

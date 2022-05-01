@@ -1,0 +1,111 @@
+2022-04-21 10:27:00,527 INFO    MainThread:17436 [internal.py:wandb_internal():92] W&B internal server running at pid: 17436, started at: 2022-04-21 10:27:00.526489
+2022-04-21 10:27:00,530 INFO    WriterThread:17436 [datastore.py:open_for_write():77] open: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\run-115l7xla.wandb
+2022-04-21 10:27:00,696 DEBUG   SenderThread:17436 [sender.py:send():235] send: header
+2022-04-21 10:27:00,696 DEBUG   SenderThread:17436 [sender.py:send():235] send: run
+2022-04-21 10:27:00,707 INFO    SenderThread:17436 [sender.py:_maybe_setup_resume():492] checking resume status for None/train/115l7xla
+2022-04-21 10:27:01,099 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: check_version
+2022-04-21 10:27:01,102 INFO    SenderThread:17436 [dir_watcher.py:__init__():169] watching files in: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files
+2022-04-21 10:27:01,103 INFO    SenderThread:17436 [sender.py:_start_run_threads():812] run started: 115l7xla with start time 1650551218
+2022-04-21 10:27:01,103 DEBUG   SenderThread:17436 [sender.py:send():235] send: summary
+2022-04-21 10:27:01,103 INFO    SenderThread:17436 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-21 10:27:01,104 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: check_version
+2022-04-21 10:27:01,223 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: run_start
+2022-04-21 10:27:02,116 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-summary.json
+2022-04-21 10:27:04,146 DEBUG   HandlerThread:17436 [meta.py:__init__():37] meta init
+2022-04-21 10:27:04,147 DEBUG   HandlerThread:17436 [meta.py:__init__():51] meta init done
+2022-04-21 10:27:04,147 DEBUG   HandlerThread:17436 [meta.py:probe():211] probe
+2022-04-21 10:27:04,359 DEBUG   HandlerThread:17436 [meta.py:_save_pip():55] save pip
+2022-04-21 10:27:04,363 DEBUG   HandlerThread:17436 [meta.py:_save_pip():69] save pip done
+2022-04-21 10:27:04,363 DEBUG   HandlerThread:17436 [meta.py:probe():249] probe done
+2022-04-21 10:27:04,386 DEBUG   SenderThread:17436 [sender.py:send():235] send: files
+2022-04-21 10:27:04,386 INFO    SenderThread:17436 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-04-21 10:27:04,409 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:27:04,413 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:27:04,559 DEBUG   SenderThread:17436 [sender.py:send():235] send: telemetry
+2022-04-21 10:27:04,954 INFO    Thread-11 :17436 [upload_job.py:push():137] Uploaded file C:\Users\Overlord\AppData\Local\Temp\tmpfrjdq4bewandb\1mtasmb4-wandb-metadata.json
+2022-04-21 10:27:05,135 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\requirements.txt
+2022-04-21 10:27:05,135 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:27:05,136 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-metadata.json
+2022-04-21 10:27:05,555 DEBUG   SenderThread:17436 [sender.py:send():235] send: config
+2022-04-21 10:27:07,153 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:27:09,171 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:27:11,192 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:27:19,562 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:27:19,563 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:27:31,385 INFO    Thread-7  :17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\config.yaml
+2022-04-21 10:27:34,812 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:27:34,813 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:27:35,755 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:27:50,009 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:27:50,009 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:28:05,172 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:28:05,173 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:28:09,522 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:28:20,339 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:28:20,340 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:28:35,565 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:28:35,565 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:28:43,322 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:28:50,776 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:28:50,776 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:29:06,027 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:29:06,028 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:29:17,143 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:29:21,204 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:29:21,204 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:29:36,405 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:29:36,406 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:29:51,038 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:29:51,579 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:29:51,579 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:30:06,750 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:30:06,751 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:30:21,926 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:30:21,927 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:30:25,076 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:30:38,413 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:30:38,414 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:30:53,633 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:30:53,634 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:30:58,957 DEBUG   SenderThread:17436 [sender.py:send():235] send: stats
+2022-04-21 10:31:08,848 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: stop_status
+2022-04-21 10:31:08,849 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: stop_status
+2022-04-21 10:31:18,437 WARNING MainThread:17436 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-04-21 10:31:18,462 DEBUG   SenderThread:17436 [sender.py:send():235] send: telemetry
+2022-04-21 10:31:19,027 DEBUG   SenderThread:17436 [sender.py:send():235] send: exit
+2022-04-21 10:31:19,027 INFO    SenderThread:17436 [sender.py:send_exit():371] handling exit code: 255
+2022-04-21 10:31:19,027 INFO    SenderThread:17436 [sender.py:send_exit():373] handling runtime: 257
+2022-04-21 10:31:19,030 INFO    SenderThread:17436 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-04-21 10:31:19,030 INFO    SenderThread:17436 [sender.py:send_exit():379] send defer
+2022-04-21 10:31:19,031 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: defer
+2022-04-21 10:31:19,031 INFO    HandlerThread:17436 [handler.py:handle_request_defer():164] handle defer: 0
+2022-04-21 10:31:19,031 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: defer
+2022-04-21 10:31:19,031 INFO    SenderThread:17436 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-04-21 10:31:19,031 INFO    SenderThread:17436 [sender.py:transition_state():392] send defer: 1
+2022-04-21 10:31:19,032 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: defer
+2022-04-21 10:31:19,032 INFO    HandlerThread:17436 [handler.py:handle_request_defer():164] handle defer: 1
+2022-04-21 10:31:19,140 WARNING MainThread:17436 [internal.py:wandb_internal():155] Internal process interrupt: 2
+2022-04-21 10:31:19,140 ERROR   MainThread:17436 [internal.py:wandb_internal():158] Internal process interrupted.
+2022-04-21 10:31:19,144 DEBUG   SenderThread:17436 [sender.py:send_request():249] send_request: defer
+2022-04-21 10:31:19,145 DEBUG   HandlerThread:17436 [handler.py:handle_request():141] handle_request: poll_exit
+2022-04-21 10:31:19,145 INFO    SenderThread:17436 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-04-21 10:31:19,145 INFO    HandlerThread:17436 [handler.py:finish():790] shutting down handler
+2022-04-21 10:31:19,145 INFO    SenderThread:17436 [sender.py:transition_state():392] send defer: 2
+2022-04-21 10:31:19,146 INFO    SenderThread:17436 [sender.py:finish():1107] shutting down sender
+2022-04-21 10:31:19,146 INFO    SenderThread:17436 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-04-21 10:31:19,742 INFO    SenderThread:17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-summary.json
+2022-04-21 10:31:19,742 INFO    SenderThread:17436 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:31:19,742 INFO    SenderThread:17436 [dir_watcher.py:finish():313] scan: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files
+2022-04-21 10:31:19,743 INFO    SenderThread:17436 [dir_watcher.py:finish():327] scan save: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\config.yaml config.yaml
+2022-04-21 10:31:19,743 INFO    SenderThread:17436 [dir_watcher.py:finish():327] scan save: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log output.log
+2022-04-21 10:31:19,744 INFO    SenderThread:17436 [dir_watcher.py:finish():327] scan save: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\requirements.txt requirements.txt
+2022-04-21 10:31:19,748 INFO    SenderThread:17436 [dir_watcher.py:finish():327] scan save: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-metadata.json wandb-metadata.json
+2022-04-21 10:31:19,748 INFO    SenderThread:17436 [dir_watcher.py:finish():327] scan save: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-summary.json wandb-summary.json
+2022-04-21 10:31:19,751 INFO    SenderThread:17436 [file_pusher.py:finish():145] shutting down file pusher
+2022-04-21 10:31:19,752 INFO    SenderThread:17436 [file_pusher.py:join():150] waiting for file pusher
+2022-04-21 10:31:20,038 INFO    WriterThread:17436 [datastore.py:close():281] close: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\run-115l7xla.wandb
+2022-04-21 10:31:20,368 INFO    Thread-15 :17436 [upload_job.py:push():137] Uploaded file C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\wandb-summary.json
+2022-04-21 10:31:20,380 INFO    Thread-12 :17436 [upload_job.py:push():137] Uploaded file C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\config.yaml
+2022-04-21 10:31:20,418 INFO    Thread-13 :17436 [upload_job.py:push():137] Uploaded file C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\output.log
+2022-04-21 10:31:20,491 INFO    Thread-14 :17436 [upload_job.py:push():137] Uploaded file C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\wandb\run-20220421_102658-115l7xla\files\requirements.txt
+2022-04-21 10:31:21,459 INFO    MainThread:17436 [internal.py:handle_exit():82] Internal process exited

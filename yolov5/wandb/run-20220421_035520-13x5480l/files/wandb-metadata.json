@@ -1,0 +1,35 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.2",
+    "heartbeatAt": "2022-04-21T07:55:32.659698",
+    "startedAt": "2022-04-21T07:55:20.633796",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "coco128.yaml",
+        "--weights",
+        "yolov5s.pt"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\alexa\\Documents\\VT Work\\2021-2022 Junior Year\\2022 Spring\\ECE 4424 Machine Learning\\Project\\yolov5\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "6ea81bb3a9bb1701bc0aa9ccca546368ce1fa400"
+    },
+    "email": "alexanderdowney@vt.edu",
+    "root": "C:/Users/alexa/Documents/VT Work/2021-2022 Junior Year/2022 Spring/ECE 4424 Machine Learning/Project/yolov5",
+    "host": "GopherOfAnnihilation",
+    "username": "alexa",
+    "executable": "C:\\Python39\\python.exe"
+}

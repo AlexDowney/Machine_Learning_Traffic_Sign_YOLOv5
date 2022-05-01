@@ -1,0 +1,135 @@
+YOLOv5 temporarily requires wandb version 0.12.10 or below. Some features may not work as expected.
+Overriding model.yaml nc=80 with nc=401
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1   1094982  models.yolo.Detect                      [401, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 270 layers, 8101126 parameters, 8101126 gradients, 19.3 GFLOPs
+Transferred 343/349 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+[34m[1mtrain: [39m[22mScanning 'D:\Project\train\labels.cache' images and labels... 36589 found, 0 missing, 119 empty, 2 corrupt: 100%[34m[1mtrain: [39m[22mWARNING: D:\Project\train\images\7PqhoA2EA5fHwoT_AWQF_Q.jpg: 8 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING: D:\Project\train\images\OENb8BfFyAocFzHHM4Mehg.jpg: ignoring corrupt image/label: negative label values [   -0.97314]
+[34m[1mtrain: [39m[22mWARNING: D:\Project\train\images\dtjhRwZcYld3CdbIFmQJaA.jpg: ignoring corrupt image/label: negative label values [   -0.95337]
+[34m[1mtrain: [39m[22mScanning 'D:\Project\train\labels.cache' images and labels... 36589 found, 0 missing, 119 empty, 2 corrupt: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+[34m[1mval: [39m[22mScanning 'D:\Project\val\labels' images and labels...5310 found, 0 missing, 12 empty, 18 corrupt: 100%|██████████|
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AIXKkmhRxtbucJp5TcX7yg.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AKGAoXNoRV73FUbGRFXBSA.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AKvlw8pJYV06F7h9pkJjlQ.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AL_OiBvL1HjlKrJHLdeMEA.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\ANhuui9h9u4x6VoBSNqC3Q.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\APpgCbEsVpnZpWQg3Zh7lQ.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\ARJdWiFT6qqs38Sua6tOYA.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\ARQfy9Z-yQTCN54OnfG5cA.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\ATs7KLSfFHPEpfiI_PaX0Q.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AUdI76jcRLA0ceg8jTcORg.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AUwR4cRDWq3EZqY9fWMVPA.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\AZEhkYps8ajBZ934skGRmQ.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\Q83P4C3NTC5I5Mdk8yIrvQ.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\Q8a4vbgDIkRdoo4lbB0e_g.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\Q91ZyLUrrZmtWhjul4Co9g.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\Q9UIZY0eiAJgAKcwp_GYCQ.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\Q9oErRjp5Aat93ZKxCxpYg.jpg: ignoring corrupt image/label: [Errno 22] Invalid argument
+[34m[1mval: [39m[22mWARNING: D:\Project\val\images\mw82Ix9zLKMBsOBqASEiDQ.jpg: ignoring corrupt image/label: negative label values [    -0.9624]
+[34m[1mval: [39m[22mNew cache created: D:\Project\val\labels.cache
+Plotting labels to runs\train\exp3\labels.jpg...
+[34m[1mAutoAnchor: [39m[22m2.24 anchors/target, 0.820 Best Possible Recall (BPR). Anchors are a poor fit to dataset , attempting to improve...
+[34m[1mAutoAnchor: [39m[22mWARNING: Extremely small objects found: 33139 of 180262 labels are < 3 pixels in size
+[34m[1mAutoAnchor: [39m[22mRunning kmeans for 9 anchors on 177514 points...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[34m[1mAutoAnchor: [39m[22mEvolving anchors with Genetic Algorithm: fitness = 0.7542: 100%|██████████| 1000/1000 [00:33<00:00, 30.02it
+[34m[1mAutoAnchor: [39m[22mthr=0.25: 0.9989 best possible recall, 4.92 anchors past thr
+[34m[1mAutoAnchor: [39m[22mn=9, img_size=640, metric_all=0.329/0.749-mean/best, past_thr=0.496-mean: 3,3, 5,5, 12,5, 9,9, 14,14, 41,14, 24,24, 47,45, 114,92
+[34m[1mAutoAnchor: [39m[22mDone  (optional: update model *.yaml to use these anchors in the future)
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1mruns\train\exp3
+Starting training for 3 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+       0/2      4.1G    0.1711   0.03052    0.1384        71       640:   0%|          | 1/2287 [00:05<3:37:46,  5.72s/
+Traceback (most recent call last):
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\train.py", line 669, in <module>
+    main(opt)
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\train.py", line 564, in main
+    train(opt.hyp, opt, device, callbacks)
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\train.py", line 325, in train
+    for i, (imgs, targets, paths, _) in pbar:  # batch -------------------------------------------------------------
+  File "C:\Python39\lib\site-packages\tqdm\std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\utils\datasets.py", line 160, in __iter__
+    yield next(self.iterator)
+  File "C:\Python39\lib\site-packages\torch\utils\data\dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "C:\Python39\lib\site-packages\torch\utils\data\dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "C:\Python39\lib\site-packages\torch\utils\data\dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "C:\Python39\lib\site-packages\torch\_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+cv2.error: Caught error in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\torch\utils\data\_utils\worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "C:\Python39\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Python39\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\utils\datasets.py", line 589, in __getitem__
+    img, labels = self.load_mosaic(index)
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\utils\datasets.py", line 689, in load_mosaic
+    img, _, (h, w) = self.load_image(index)
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\utils\datasets.py", line 663, in load_image
+    im = cv2.imread(f)  # BGR
+  File "C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\yolov5\utils\general.py", line 950, in imread
+    return cv2.imdecode(np.fromfile(path, np.uint8), flags)
+cv2.error: OpenCV(4.5.3) C:\Users\runneradmin\AppData\Local\Temp\pip-req-build-sn_xpupm\opencv\modules\core\src\alloc.cpp:73: error: (-4:Insufficient memory) Failed to allocate 35712576 bytes in function 'cv::OutOfMemoryError'

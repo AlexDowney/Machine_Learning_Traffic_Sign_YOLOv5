@@ -1,0 +1,145 @@
+YOLOv5 temporarily requires wandb version 0.12.10 or below. Some features may not work as expected.
+Overriding model.yaml nc=80 with nc=4
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     24273  models.yolo.Detect                      [4, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model summary: 270 layers, 7030417 parameters, 7030417 gradients, 15.9 GFLOPs
+Transferred 343/349 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight (no decay), 60 weight, 60 bias
+[34m[1mtrain: [39m[22mScanning 'C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\a
+[34m[1mtrain: [39m[22mWARNING: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\archive\train\images\00340.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mNew cache created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\archive\train\labels.cache
+[34m[1mval: [39m[22mScanning 'C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\arc
+[34m[1mval: [39m[22mNew cache created: C:\Users\alexa\Documents\VT Work\2021-2022 Junior Year\2022 Spring\ECE 4424 Machine Learning\Project\archive\val\labels.cache
+Plotting labels to runs\train\exp4\labels.jpg...
+[34m[1mAutoAnchor: [39m[22m4.45 anchors/target, 1.000 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1mruns\train\exp4
+Starting training for 3 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       0/2     3.48G    0.1212   0.02422   0.04343        16       640: 100%|██████████| 40/40 [01:00<00:00,  1.51s/it]
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|          | 0/4 [00:00<?, WARNING: NMS time limit 1.060s exceeded
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 4/4 [00:06<00:
+                 all        111        179    0.00157     0.0141   0.000902   0.000232
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       1/2     3.62G    0.0929   0.02013   0.03726        11       640: 100%|██████████| 40/40 [00:47<00:00,  1.18s/it]
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 4/4 [00:03<00:00,  1.10it/s]
+                 all        111        179     0.0736      0.148       0.05     0.0126
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       2/2     3.62G   0.07318   0.02032   0.03544        22       640: 100%|██████████| 40/40 [00:47<00:00,  1.20s/it]
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 4/4 [00:03<00:00,  1.06it/s]
+                 all        111        179     0.0487      0.481     0.0946     0.0295
+3 epochs completed in 0.048 hours.
+Optimizer stripped from runs\train\exp4\weights\last.pt, 14.4MB
+Optimizer stripped from runs\train\exp4\weights\best.pt, 14.4MB
+Validating runs\train\exp4\weights\best.pt...
+Fusing layers...
+Model summary: 213 layers, 7020913 parameters, 0 gradients, 15.8 GFLOPs
+
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████| 4/4 [00:05<00:00,  1.45s/it]
+                 all        111        179     0.0488      0.481     0.0951     0.0296
+         prohibitory        111         71     0.0622      0.859      0.264     0.0859
+              danger        111         36     0.0427       0.25     0.0386    0.00781
+           mandatory        111         23     0.0278      0.304     0.0257    0.00828
+               other        111         49     0.0624       0.51     0.0518     0.0165
